@@ -1,0 +1,348 @@
+* {
+    margin: 0 auto;
+}
+
+.app-body {
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+}
+
+/*Боковое меню*/
+.app-body__aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80px;
+    height: 1080px;
+}
+
+.app-body__aside__menu {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #805CD3;
+
+    &:hover {
+        background-color: #6B22D1;
+    }
+}
+
+.app-body__aside__menu-image {
+    fill: #805CD3;
+}
+
+.app-body__aside__menu__2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 37px;
+    padding-bottom: 70px;
+
+    width: 100%;
+    height: 100%;
+
+    background: #805CD3;
+    align-self: stretch;
+}
+
+
+.app-body__aside__menu__2__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-body__aside__home-image {
+    fill: #805CD3;
+}
+
+.app-body__aside__plan-image {
+    fill: #805CD3;
+}
+
+.app-body__aside__notes-image {
+    fill: #805CD3;
+}
+
+.app-body__aside__bin-image {
+    fill: #805CD3;
+}
+
+.app-body__aside__menu__2__button {
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.app-body__aside__menu__2__button-image {
+    padding-top: 650px;
+    fill: #805CD3;
+}
+
+/*Основная страница (область)*/
+.app-body__menu {
+    display: flex;
+    flex-direction: column;
+
+    width: 1840px;
+    height: 100%;
+}
+
+.app-body__menu__header {
+    width: 100%;
+    height: 70px;
+
+    background: #F7F2FF;
+}
+
+.app-body__menu__header__todo {
+    padding-top: 14px;
+    padding-left: 70px;
+
+    border: none;
+    background-color: transparent;
+}
+
+.app-body__menu__plan {
+    width: 1840px;
+    height: 400px;
+
+    gap: 6px;
+}
+
+.app-body__menu__plan__header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 110px;
+
+    background: #F7F2FF;
+}
+
+.app-body__menu__plan__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    padding-top: 10px;
+    padding-bottom: 38px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    gap: 40px;
+
+    width: 1840px;
+    height: 445px;
+}
+
+.app-body__menu__plan__content__block {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    height: 250px;
+
+    background: #F7F2FF;
+}
+
+.app-body__menu__plan__content__block__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 34px;
+
+    background: #6B22D1;
+}
+
+.app-body__menu__plan__content__block__header__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-right: 80px;
+
+    height: 32px;
+}
+
+.app-body__menu__plan__content__block__header__vector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-left: 60px;
+
+    width: 22px;
+    height: 22px;
+}
+
+.app-body__menu__plan__content__block__header__vector__button {
+    padding-right: 25px;
+    width: 22px;
+    height: 22px;
+}
+
+.app-body__menu__plan__content__block__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 300px;
+    height: 216px;
+
+    background: #F7F2FF;
+}
+
+.app-body__menu__plan__content__block__main__top {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 5px;
+
+    width: 285px;
+    height: 100px;
+
+    gap: 5px;
+}
+
+.app-body__menu__plan__content__block__main__low {
+    display: flex;
+    flex-direction: column;
+
+    width: 285px;
+    height: 60px;
+
+    gap: 5px;
+}
+
+.app-body__menu__plan__content__block__main__top__low {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    width: 260px;
+    height: 30px;
+
+    background: #F7F2FF;
+    border: medium solid blueviolet;
+}
+
+.app-body__menu__plan__content__block__main__top__low__button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 22px;
+    height: 22px;
+}
+
+.app-body__menu__plan__content__block__main__top__low__button__img {
+    padding-right: 25px;
+    width: 18px;
+    height: 22px;
+}
+
+.app-body__menu__plan__content__block__main__top__low__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-right: 60px;
+
+    width: 150px;
+    height: 32px;
+}
+
+.app-body__menu__plan__content__block__main__top__low__bin {
+    width: 22px;
+    height: 22px;
+}
+
+.app-body__menu__plan__content__block__main__top__low_button__bin {
+    width: 18px;
+    height: 18px;
+
+    background-color: #F7F2FF;
+    &:hover {
+        background-color: #6B22D1;
+    }
+}
+
+.app-body__menu__notion {
+    padding-top: 70px;
+
+    width: 1840px;
+    height: 560px;
+}
+
+.app-body__menu__notion__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 10px;
+    padding-left: 70px;
+
+    background: #F7F2FF;
+}
+
+.app-body__menu__notion__header__right {
+    background: #F7F2FF;
+}
+
+.app-body__menu__notion__header__left {
+
+}
+
+.app-body__menu__notion__header__button {
+
+}
+
+.app-body__menu__notion__header__2 {
+    padding-top: 10px;
+    padding-left: 70px;
+}
+
+.app-body__menu__notion__header__2__button {
+    width: 150px;
+    height: 40px;
+}
+
+.app-body__menu__notion__low__content {
+    width: 100%;
+    height: 80.5%;
+}
+
+.app-body__menu__notion__low__content__block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}

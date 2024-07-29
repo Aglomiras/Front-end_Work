@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classwork8</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /*Desctop подход, чем меньше разрешение экрана, на котором смотрят страницу, тем меньше будет изображение*/
+        @media (max-width: 640px) {
+            img {
+                width: 427px;
+                height: 240px;
+            }
+        }
+        @media (max-width: 450px) {
+            img {
+                width: 320px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 8</h1>
+    <h2>img - тег простой вставки изображения</h2>
+    <img src="img1.jpg" alt="Пошел нахуй" width="440">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda aut cum, delectus dolorem doloribus est excepturi facilis fuga harum in inventore ipsam iure laudantium maiores numquam officiis quisquam ratione.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aut autem dolorum, earum et expedita explicabo maiores modi molestias nesciunt nostrum officia quasi quia recusandae rem repellat voluptas. Itaque, rem!</p>
+
+    <h2>figure - тег вставки изображения с подписями</h2>
+    <figure>
+        <img src="img2.jpg" alt="auto" width="640">
+        <figcaption>Image 1. Auto</figcaption>
+    </figure>
+
+    <h2>picture - набор изображений для различных усоловий</h2>
+    <picture>
+        <source media="(max-wight: 450px)" srcset="img1.jpg">
+        <source media="(max-wight: 700px)" srcset="img2.jpg">
+        <img src="img1.jpg" alt="Nature" width="640" height="320">
+    </picture>
+</body>
+</html>

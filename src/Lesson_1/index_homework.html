@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_homework.css">
+</head>
+<body class="app-body">
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--Боковая панель (меню)++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--------------------------------------------------------------------------------------------------------------------->
+    <aside class="app-body__aside">
+<!--        ----------------------------------------------------------------------------------------------------------->
+<!--        Квадрат меню-->
+<!--        ----------------------------------------------------------------------------------------------------------->
+        <div class="app-body__aside__menu">
+            <img src="asset_homework/aside_frame/aside_menu.svg" alt="menu" class="app-body__aside__menu-image">
+        </div>
+<!--        ----------------------------------------------------------------------------------------------------------->
+<!--        Группа значков с кнопкой (навигация и справка)-->
+<!--        ----------------------------------------------------------------------------------------------------------->
+        <div class="app-body__aside__menu__2">
+
+<!--            Навигация-->
+            <nav class="app-body__aside__menu__2__nav">
+                <a>
+                    <img src="asset_homeworkside_frame/aside_home.svg" alt="home" class="app-body__aside__home-image">
+                </a>
+                <a>
+                    <img src="asset_homeworkside_frame/aside_plan.svg" alt="plan" class="app-body__aside__plan-image">
+                </a>
+                <a>
+                    <img src="asset_homeworkside_frame/aside_notes.svg" alt="notes" class="app-body__aside__notes-image">
+                </a>
+                <a>
+                    <img src="asset_homeworkside_frame/aside_bin.svg" alt="bin" class="app-body__aside__bin-image">
+                </a>
+            </nav>
+
+<!--            Справка-->
+            <button class="app-body__aside__menu__2__button">
+                <img src="asset_homeworkside_frame/aside_vector.svg" alt="vector" class="app-body__aside__menu__2__button-image">
+            </button>
+        </div>
+    </aside>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--Главная область++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--------------------------------------------------------------------------------------------------------------------->
+    <main class="app-body__menu">
+<!--        ----------------------------------------------------------------------------------------------------------->
+<!--        Шапка-->
+<!--        ----------------------------------------------------------------------------------------------------------->
+        <div class="app-body__menu__header">
+            <img src="asset_homeworkain_frame/main_todo.svg" alt="todo" class="app-body__menu__header__todo">
+        </div>
+
+<!--        ----------------------------------------------------------------------------------------------------------->
+<!--        Область с заметками-->
+<!--        ----------------------------------------------------------------------------------------------------------->
+        <div class="app-body__menu__plan">
+
+<!--            Шапка первого блока заметок-->
+            <div class="app-body__menu__plan__header">
+                <h1>High_Plan_Work</h1>
+            </div>
+
+<!--            Область блоков -->
+            <div class="app-body__menu__plan__content">
+<!--                Блоки-->
+                <div class="app-body__menu__plan__content__block">
+<!--                    Шапка блока-->
+                    <div class="app-body__menu__plan__content__block__header">
+                        <div class="app-body__menu__plan__content__block__header__text">
+                            <span>Вт, 23 августа</span>
+                        </div>
+                        <div class="app-body__menu__plan__content__block__header__vector">
+                            <button class="app-body__menu__plan__content__block__header__vector__button">
+                                <img src="asset_homeworkain_frame/main_vector_plus.svg" alt="Plus" title="Добавить">
+                            </button>
+                        </div>
+                    </div>
+<!--                    Контент блока-->
+                    <div class="app-body__menu__plan__content__block__main">
+<!--                        Надо сделать-->
+                        <div class="app-body__menu__plan__content__block__main__top">
+                            <!--                            Дело-->
+                            <div class="app-body__menu__plan__content__block__main__top__low">
+                                <div class="app-body__menu__plan__content__block__main__top__low__button">
+                                    <button class="app-body__menu__plan__content__block__main__top__low__button__img">
+                                        <img src="asset_homeworkain_frame/main_ellipse.svg" alt="Plus" title="Выполнено">
+                                    </button>
+                                </div>
+                                <div class="app-body__menu__plan__content__block__main__top__low__text">
+                                    <span>Забрать посылку</span>
+                                </div>
+                                <div class="app-body__menu__plan__content__block__main__top__low__bin">
+                                    <button class="app-body__menu__plan__content__block__main__top__low_button__bin">
+                                        <img src="asset_homeworkain_frame/main_bin.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+<!--                        Уже сделаланы-->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!--        ----------------------------------------------------------------------------------------------------------->
+<!--        Нижняя область с заметками-->
+<!--        ----------------------------------------------------------------------------------------------------------->
+        <div class="app-body__menu__notion">
+
+<!--            Шапка нижнего первого блока заметок-->
+            <div class="app-body__menu__notion__header">
+                <div class="app-body__menu__notion__header__right">
+                    <h1>Low_Plan_Work</h1>
+                </div>
+                <div class="app-body__menu__notion__header__left">
+                    <button class="app-body__menu__notion__header__button">
+                        <span>Добавить note</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="app-body__menu__notion__header__2">
+                <button class="app-body__menu__notion__header__2__button">
+                    <span>Поиск</span>
+                </button>
+            </div>
+
+<!--            Область нижнего перавого блока-->
+            <div class="app-body__menu__notion__low__content">
+                <div class="app-body__menu__notion__low__content__block">
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

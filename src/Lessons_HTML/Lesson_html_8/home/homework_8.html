@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework8</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /*Desctop подход, чем меньше разрешение экрана, на котором смотрят страницу, тем меньше будет изображение*/
+        @media (max-width: 750px) {
+            img {
+                width: 400px;
+            }
+        }
+        @media (max-width: 450px) {
+            img {
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Homework 8</h1>
+    <h2>Text block 1</h2>
+    <img src="animals1.jpg" alt="девушка 1" width="300">
+    <img src="animal2.jpg" alt="девушка 2" width="300">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi delectus deserunt doloribus ea enim eum ex, excepturi ipsam minima molestiae officiis optio sed unde vel veniam vero voluptates voluptatibus?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet delectus ex harum id ipsum neque nisi placeat, qui, quo rem sapiente soluta tempora tenetur, velit voluptate voluptatum. Dolore, doloremque.</p>
+
+    <h2>Text block 2</h2>
+    <figure>
+        <img src="animals3.jpg" alt="Девушка 3">
+        <figcaption>
+            Рис. 1 - Девушка
+        </figcaption>
+    </figure>
+
+    <h2>Text block 3</h2>
+    <picture>
+        <source media="(max-wight: 450px)" srcset="animals3.jpg">
+        <source media="(max-wight: 750)" srcset="animals4.jpg">
+        <img src="animals1.jpg" alt="Nature" width="640" height="320">
+    </picture>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi delectus deserunt doloribus ea enim eum ex, excepturi ipsam minima molestiae officiis optio sed unde vel veniam vero voluptates voluptatibus?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet delectus ex harum id ipsum neque nisi placeat, qui, quo rem sapiente soluta tempora tenetur, velit voluptate voluptatum. Dolore, doloremque.</p>
+</body>
+</html>
