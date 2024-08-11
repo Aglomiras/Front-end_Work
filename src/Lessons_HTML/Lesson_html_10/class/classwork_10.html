@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework10</title>
+</head>
+<body>
+    <h1>Lesson 10</h1>
+
+    <h2>audio - тег добавления аудио-файлов</h2>
+    <audio controls>
+        <source src="media/audio-test.ogg" type="audio/ogg">
+        <source src="media/audio-test.mp3" type="audio/mpeg">
+        Ваш бпаузер не поддерживает тег audio.
+    </audio>
+
+    <h2>video - тег добавления видео-файла</h2>
+    <video width="320" controls>
+        <source src="media/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        <track src="">
+        ваш браузер не поддерживает тег video
+    </video>
+
+    <h2>iframe - вставка другой веб-страницы</h2>
+    <iframe src="frame.html" title="Frame content"></iframe>
+
+    <h2>object - тег встраивания объекта на страницу</h2>
+    <h3>
+        Любой элемент формата object необходимо заключить в обертку (div),
+        так как они сами по себе являются строчными элементами, и чтобы они начинались с новой
+        строки нужен div
+    </h3>
+    <div>
+        <object data="frame.html" type="text/html" width="500" height="200"></object>
+    </div>
+    <div>
+        <object data="media/animal2.jpg" type="image/jpg" width="300" height="200"></object>
+    </div>
+    <div>
+        <object data="media/file_example_MP4_480_1_5MG.mp4" type="video/mp4"
+        width="400" height="300"></object>
+    </div>
+
+    <div>
+        <object type="application/pdf" data="media/Java%20—%20копия.pdf"
+        width="800" height="400"></object>
+    </div>
+
+    <h2>embed - тег встраивания связанного ресурса</h2>
+    <div>
+        <embed src="frame.html" type="text/html" width="500" height="200">
+    </div>
+    <div>
+        <embed src="media/animal2.jpg" type="image/jpg" width="300" height="200">
+    </div>
+    <div>
+        <embed src="media/file_example_MP4_480_1_5MG.mp4" type="video/mp4"
+               width="400" height="300">
+    </div>
+</body>
+</html>
