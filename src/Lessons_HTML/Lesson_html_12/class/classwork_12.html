@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class 12</title>
+</head>
+<body>
+    <h1>Lesson 12</h1>
+    <h2>Формы-1</h2>
+    <pre>
+        Атрибуты тега form
+        action - URL-адре, по которому следует отправить данные формы после ее заполнения
+        method - HTTP-метод, который будет использоваться при отправке формы (GET, POST)
+        enctype - способ кодирования
+        autocomplete - включение автозаполнения формы
+        name - название формы
+        novalidate - отключение встроенной проверки данных формы на корректность ввода
+        target - определяет, где отображать результат отправки формы
+
+        Атрибуты тега input (текстовый ввод)
+        text - поле для ввода текста (это значение по умолчанию)
+        password - поле ввода пароля
+        email - поле ввода вдреса электронной почты
+        search - поле ввода поискового запроса
+        tel - поле ввода номера телефона
+        url - поле ввода url-адреса
+        hidden - скрытое поле
+
+        Атрибуты тега input (ввод какой-либо информации)
+        date - элемент ввода даты
+        datetime-local - элемент ввода локальной даты
+        month - элемент выбора месяца
+        week - элемент ввода недели
+        time - элемент ввода времени
+        number - элемент ввода числа
+        range - элемент указания диапазона
+        color - элемент выбора цвета
+        file - элемент выбора файла
+        checkbox - флажок переключатель
+
+        Атрибуты тега input (различные кнопки)
+        button - кнопка
+        submit - кнопка отправки формы
+        image - изображение как кнопка отправки формы
+        reset - кнопка сброса элементов формы
+        radio - радио-кнопка
+
+        Основные атрибуты тега input
+        name - название элемента
+        placeholder - описание элемента, отображаемое в поле ввода
+        required - указывает, что данное поле должно обязательно иметь какое-либо непустое значение перед отправкой формы
+        readonly - данное поле предназначено только для чтения
+        value - значение элемента
+        disabled - указывает, что элемент input должен быть отключен
+    </pre>
+
+    <h2>Form #1</h2>
+    <form action="#" method="POST">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login"> <br> <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"> <br> <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Form #2</h2>
+    <form action="#" method="POST">
+<!--        Тоже самое, что и в первом примере, но без тегов for-->
+        <label>Name: <input type="text" required></label><br><br>
+        <label>Email: <input type="email" required></label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Form #3</h2>
+    <form action="#" method="POST">
+        <p>Движимое имущество</p>
+        <input type="checkbox" id="bike" name="vehicle" value="Bike">
+        <label for="bike"> Велосипед</label><br>
+        <input type="checkbox" id="motobike" name="vehicle" value="Motobike">
+        <label for="motobike"> Мотоцикл</label><br>
+        <input type="checkbox" id="car" name="vehicle" value="Car">
+        <label for="car"> Атомобиль</label>
+
+        <p>Недвижимое имущество</p>
+        <input type="radio" id="private" name="estate" value="private">
+        <label for="private"> Частный дом</label><br>
+        <input type="radio" id="apartament" name="estate" value="apartament">
+        <label for="apartament"> Квартира</label><br>
+        <input type="radio" id="room" name="estate" value="room">
+        <label for="room"> Комната</label><br><br>
+    </form>
+
+    <h2>Form #4</h2>
+    <form action="#" id="form4" enctype="multipart/form-data">
+        <label for="fname">File name</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="image" src="submit.png" alt="Submit" width="40" height="40">
+    </form>
+    <label for="agree"><input type="checkbox" form="form4" id="agree" name="agree"
+    value="yes" checked>С условиями предоставления услуг</label>
+
+    <h2>Form #5</h2>
+    <form action="#" id="form5">
+        <fieldset>
+            <legend>Person info:</legend>
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname"
+            name="firstname"><br><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname">
+        </fieldset>
+    </form>
+    <fieldset form="form5">
+        <legend>Educ:</legend>
+        <label for="school">School:</label>
+        <input type="text" id="school"
+               name="school" form="form5"><br><br>
+        <label for="university">University:</label>
+        <input type="text" id="university" name="university" form="form5">
+    </fieldset>
+    <input form="form5" type="submit" value="Submit">
+</body>
+</html>
