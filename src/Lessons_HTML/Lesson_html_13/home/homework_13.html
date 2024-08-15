@@ -8,6 +8,66 @@
     <title>Homework13</title>
 </head>
 <body>
+    <h1>Home 13</h1>
+    <h2>Form 1</h2>
+    <form action="#" method="POST">
+        <label for="LastName">Фамилия:</label>
+        <input type="text" id="LastName"><br><br>
 
+        <label for="FirstName">Имя:</label>
+        <input type="text" id="FirstName"><br><br>
+
+        <label for="year">Год рождения:</label>
+        <input type="number" id="year"><br><br>
+
+        <p>Пол:</p>
+        <label for="sexM">Муж:</label>
+        <input type="radio" id="sexM" name="estate" value="sexM"><br><br>
+        <label for="sexG">Жен:</label>
+        <input type="radio" id="sexG" name="estate" value="sexG"><br><br>
+
+        <label for="grad">Гражданство</label>
+        <select name="grad" id="grad">
+            <option value="RF">RF</option>
+            <option value="FV">FV</option>
+            <option value="XC">XC</option>
+        </select>
+        <br><br>
+
+        <p>Визы:</p>
+        <label for="USA">USA</label>
+        <input type="checkbox" id="USA" name="vehicle" value="USA"><br><br>
+        <label for="QAZ">QAZ</label>
+        <input type="checkbox" id="QAZ" name="vehicle" value="QAZ"><br><br>
+        <label for="KLIO">KLIO</label>
+        <input type="checkbox" id="KLIO" name="vehicle" value="KLIO"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Form 2</h2>
+    <form action="#" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" id="name"><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email"><br><br>
+
+        <label for="ocenka">Оценка статьи:</label>
+        <select name="ocenka" id="ocenka">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+        </select>
+        <br><br>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+        <input type="reset" value="Reset"><br><br>
+        <input type="submit" value="Submit"><br><br>
+    </form>
 </body>
 </html>
