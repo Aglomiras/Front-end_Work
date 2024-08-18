@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<!--
+В блоке title - указывается название элементов
+рекомендуется использовать от 3 до 8 слов, но не более
+50-60 символов. Не рекомендуется использовать просто список слов.
+-->
+    <title>Document_title_15</title>
+<!--
+base - базовый url-адрес.
+Все ссылки в документе будут начинаться с этого адреса.
+target - отвечает за то, где будет открываться ссылка.
+значение _blank говорит о том, что ссылка будет открываться в новой вкладке браузера
+-->
+    <base href="https://www.mysite.com" target="_blank">
+<!--
+Мета-описание
+meta charset - указывает кодировку символов, которыую использует страница
+meta name:
+    - description
+    - keywords
+    - author - автор документа
+    - viewport
+
+meta http-equiv - в какой версии интернет-эксплеер должен отображаться документ
+-->
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-
+    <h1>Lesson 15</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Aut consectetur,
+        consequuntur cumque debitis distinctio
+        doloremque error in laboriosam laborum nam neque
+        quaerat quam quas sapiente totam! Earum iste porro
+        quibusdam!<a href="article.html">more details....</a>
+    </p>
+    <img src="image.jpg" alt="Test image">
 </body>
 </html>
